@@ -2,8 +2,8 @@ object frmMainMenu: TfrmMainMenu
   Left = 0
   Top = 0
   Caption = 
-    'Modelo de Sistema Comercial Multiusu'#225'rio com MS-Access - Menu Pr' +
-    'incipal'
+    'Modelo de Sistema Comercial Multiusu'#225'rio com Firebird - Menu Pri' +
+    'ncipal'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
