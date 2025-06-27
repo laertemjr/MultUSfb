@@ -117,14 +117,14 @@ begin
          if bAbortar then
          begin
             Application.Terminate;
-            Result := True; // para sair do loop "while not conectar() do"
+            Abort;
          end
          else Result := False;
       end
       else
       begin
          Application.Terminate;
-         Result := True; // para sair do loop "while not conectar() do"
+         Abort;
       end;
    end;
 end;
