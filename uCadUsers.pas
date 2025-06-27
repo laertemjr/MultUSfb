@@ -30,7 +30,7 @@ type
     procedure FDTable1BeforePost(DataSet: TDataSet);
     procedure dbLedt_userExit(Sender: TObject);
     procedure dbLedt_userKeyPress(Sender: TObject; var Key: Char);
-    procedure FDTable1AfterInsert(DataSet: TDataSet);
+    procedure TbUsersAfterInsert(DataSet: TDataSet);
 
   private
     { Private declarations }
@@ -77,10 +77,9 @@ begin
       Key := #0; // #8 backspace
 end;
 
-procedure TfrmCadUsers.FDTable1AfterInsert(DataSet: TDataSet);
+procedure TfrmCadUsers.TbUsersAfterInsert(DataSet: TDataSet);
 begin
    dbLedt_user.SetFocus;
-   dbLedt_user.SelLength := 0;
 end;
 
 procedure TfrmCadUsers.FDTable1BeforePost(DataSet: TDataSet);

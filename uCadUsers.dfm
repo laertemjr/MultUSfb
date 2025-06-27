@@ -159,6 +159,7 @@ object frmCadUsers: TfrmCadUsers
     ParentBiDiMode = False
   end
   object TbUsers: TFDQuery
+    AfterInsert = TbUsersAfterInsert
     Connection = dm.FDConnection1
     UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
     UpdateOptions.FetchGeneratorsPoint = gpImmediate
