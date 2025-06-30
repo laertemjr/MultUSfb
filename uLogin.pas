@@ -137,6 +137,7 @@ begin
    dm.FDConnection1.Params.Add('Server=' + iniconf.ReadString('Firebird', 'Server', ''));
    dm.FDConnection1.Params.Add('User_Name=' + iniconf.ReadString('Firebird', 'User_Name', ''));
    dm.FDConnection1.Params.Add('Password=' + iniconf.ReadString('Firebird', 'Password', ''));
+   dm.FDPhysFBDriverLink1.VendorLib := iniconf.ReadString('Firebird', 'VendorLib', '');
    iniconf.Free;
 end;
 
